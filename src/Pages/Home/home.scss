@@ -1,0 +1,29 @@
+$--linear-white: #F5FCFF;
+$--main-color: #00C1C0;
+$--blue-color: #036793;
+
+:root {
+    --linear-white: $--linear-white;
+    --main-color: $--main-color;
+    --blue-color: $--blue-color;
+}
+
+
+.hero_section{
+  background-image: url(../../assets/homeImages/Vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 86vh;
+  
+}
+
+     
+
+
+  
+
+
+
+
