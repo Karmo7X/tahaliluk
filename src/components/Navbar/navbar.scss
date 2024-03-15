@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+$--linear-white: #F5FCFF;
+$--main-color: #00C1C0;
+$--blue-color: #036793;
+
+:root {
+    --linear-white: $--linear-white;
+    --main-color: $--main-color;
+    --blue-color: $--blue-color;
+}
+
+
+
+.navbar {
+    background-color: var(--linear-white);
+
+}
+
+.list_nav {
+    .logo {
+        width: 60%;
+    }
+
+    .logomobile{
+        width: 47%;
+    
+    }
+
+}
