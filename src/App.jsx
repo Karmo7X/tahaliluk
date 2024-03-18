@@ -5,10 +5,12 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 
+
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Laboratory = lazy(() => import("./Pages/Laboratories/Laboratory"));
 const WhoUs = lazy(() => import("./Pages/Whous/WhoUs"));
 const Contact = lazy(() => import("./Pages/Contactus/Contact"));
+const Labdetails = lazy(() => import("./Pages/Labdetails/Labdetails"));
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -31,6 +33,14 @@ function App() {
               element={
                 <Suspense fallback={""}>
                   <Laboratory />
+                </Suspense>
+              }
+            />
+             <Route
+              path="lab_deatils"
+              element={
+                <Suspense fallback={""}>
+                  <Labdetails />
                 </Suspense>
               }
             />
