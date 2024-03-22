@@ -53,9 +53,9 @@ const Home = () => {
   return (
     <>
 
-<div className="homepage_sec " style={{minHeight:'100vh'}}>
-        <div className="container mx-auto" style={{minHeight:'100vh'}}>
-          <div style={{minHeight:'100vh'}} className=" hero_section flex flex-col lg:flex-row lg:justify-between px-3 text-center lg:text-right  lg:px-10 ">
+<div className="homepage_sec " style={{marginTop:'6rem',minHeight:'100vh'}}>
+       <div className=''>
+<div className=" hero_section w-full flex flex-col lg:flex-row lg:justify-between px-3 text-center lg:text-right  lg:px-10 ">
             <div className="w-full lg:w-1/2 lg:px-0  mt-20">
               <h2
                 className="text-3xl lg:text-4xl  mb-6 font-semibold"
@@ -119,28 +119,28 @@ const Home = () => {
               onSlideChange={onSlideChange}
               autoplay={{ delay: 3000 }}
             >
-              <SwiperSlide>
-                <div className=" lg:p-20">
+              <SwiperSlide >
+                <div className="flex items-center  justify-center lg:p-20">
                   <img src={slider_image} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" lg:p-20">
+                <div className="flex items-center  justify-center lg:p-20">
                   <img src={slider_image} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" lg:p-20">
+                <div className="flex items-center  justify-center lg:p-20">
                   <img src={slider_image} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" lg:p-20">
+                <div className="flex items-center  justify-center lg:p-20">
                   <img src={slider_image} alt="" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" lg:p-20">
+                <div className="flex items-center  justify-center lg:p-20">
                   <img src={slider_image} alt="" />
                 </div>
               </SwiperSlide>
@@ -158,6 +158,7 @@ const Home = () => {
               <FaArrowLeftLong />
             </button>
           </div>
+         
           <div  className="hero_section3 flex  items-center flex-col  justify-center  lg:px-5 mt-20 mb-20">
             <div className="head_Sec">
               <h1 className=" text-xl lg:text-4xl text-center font-bold text-blue-700">
@@ -170,7 +171,7 @@ const Home = () => {
             </div>
 
             <div className="content_hero_section3  flex items-center justify-center   lg:grid lg:grid-cols-3 gap-10  flex-wrap mt-14">
-              <div className="card ">
+            <div className="card ">
                 <div style={{position:'relative'}} className="card_content  hover:shadow-md hover:shadow-teal-300 border p-4 lg:p-10 border-solid rounded border-teal-300 flex justify-center items-center  flex-col">
                   <div className='text-teal-300' style={{position:"absolute",top:'15px' ,fontSize:'30px' ,right:'20px' }}>
                   <CiBookmark />
@@ -213,7 +214,8 @@ const Home = () => {
                     <FaArrowRightLong />
                   </Link>
                 </div>
-              </div> <div className="card ">
+              </div>
+               <div className="card ">
                 <div style={{position:'relative'}} className="card_content  hover:shadow-md hover:shadow-teal-300 border p-4 lg:p-10 border-solid rounded border-teal-300 flex justify-center items-center  flex-col">
                   <div className='text-teal-300' style={{position:"absolute",top:'15px' ,fontSize:'30px' ,right:'20px' }}>
                   <CiBookmark />
@@ -273,6 +275,22 @@ const Home = () => {
               <img src={hero4_image} alt="" className="img_hero lg:w-full" />
             </div>
           </div>
+     
+          <div  className="hero_section6 flex  items-center flex-col  justify-center  lg:px-5 mt-20 mb-20">
+            <div className="head_Sec">
+              <h1 className=" text-xl lg:text-4xl text-center font-bold text-blue-700">
+                 اختر من بين  <span className="text-teal-300 ">أفضل العروض </span>
+              </h1>
+              
+            </div>
+           <div className="">
+            {/* <Slider_offers className='slider'/> */}
+           
+            
+           </div>
+          
+          
+          </div>
           <div  className="hero_section5 flex  items-center flex-col  justify-center  lg:px-5 mt-20 mb-20">
             <div className="head_Sec">
               <h1 className=" text-xl lg:text-4xl text-center font-bold text-blue-700">
@@ -288,7 +306,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="content_hero_section5  flex items-center justify-center lg:grid lg:grid-cols-3    gap-4  flex-wrap mt-14">
+            <div className="content_hero_section5  flex items-center justify-center lg:grid lg:grid-cols-3   px-3   gap-4  flex-wrap mt-14">
               <div className="card ">
                 <div className="card_content hover:shadow-md hover:shadow-teal-300 border p-4 lg:p-5 lg:py-10 border-solid rounded border-teal-300 ">
                   <img src={staricon} alt="" className="mt-4" />
@@ -376,21 +394,12 @@ const Home = () => {
             </div>
            
           </div>
-          {/* <div style={{minHeight:'100vh'}} className="hero_section6 flex  items-center flex-col  justify-center  lg:px-5 mt-20 mb-20">
-            <div className="head_Sec">
-              <h1 className=" text-xl lg:text-4xl text-center font-bold text-blue-700">
-                 اختر من بين  <span className="text-teal-300 ">أفضل العروض </span>
-              </h1>
-              
-            </div>
-           <div className="flex items-center  justify-center px-3 lg:px-5 mt-20 mb-20">
-            <Slider_offers/>
-            
-           </div>
+
+
+       </div>
           
           
-          </div> */}
-        </div>
+       
       </div>
 
     </> 
