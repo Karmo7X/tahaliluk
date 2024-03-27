@@ -10,11 +10,11 @@ const Navbar = () => {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const location = useLocation();
-   
+    
   return (
     <div className="navbar">
-       <header className="  fixed inset-x-0 top-0 z-50 bg-slate-50 ">
-        <nav className=" flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+       <header className="  fixed inset-x-0 top-0 z-50  " style={{background:location.pathname === '/login' || location.pathname === '/Register' || location.pathname === '/forget_password' ?  'transparent' :  "#F5FCFF"}}>
+        <nav className=" flex items-center justify-between p-6 lg:px-8" aria-label="Global" style={{background:location.pathname === '/login' || location.pathname === '/Register' || location.pathname === '/forget_password'  ? 'transparent':  "#F5FCFF" }}>
           <div className="flex lg:flex-1">
             <a href="#" className="list_nav -m-1.5 p-1.5">
               
@@ -57,7 +57,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
            
-            <Link to='' className={`text-sm font-semibold leading-6 rounded-full  px-10 py-3 bg-teal-500 text-white hover:bg-teal-800  `} >
+            <Link to='/login' className={`text-sm font-semibold leading-6 rounded-full  px-10 py-3 bg-teal-500 text-white hover:bg-teal-800  `} >
             تسجيل دخول
             
             </Link>
@@ -107,7 +107,7 @@ const Navbar = () => {
             </Link>
                 </div>
                 <div className="py-6">
-                <Link to='' className={`text-sm font-semibold leading-6 rounded-full  px-10 py-3 bg-teal-500 text-white hover:bg-teal-800  `} >
+                <Link to='/login' className={`text-sm font-semibold leading-6 rounded-full  px-10 py-3 bg-teal-500 text-white hover:bg-teal-800  `} >
             تسجيل دخول
             
             </Link>

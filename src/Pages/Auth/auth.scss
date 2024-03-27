@@ -1,0 +1,100 @@
+$--linear-white: #F5FCFF;
+$--main-color: #00C1C0;
+$--blue-color: #036793;
+
+:root {
+    --linear-white: $--linear-white;
+    --main-color: $--main-color;
+    --blue-color: $--blue-color;
+}
+
+
+
+.left_section{
+   
+    .image_sec{
+        background-image: url(../../assets/Auth_image/login_vetor.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        top: -40px !important;
+        img{
+    
+            width:70%;
+         
+         }
+    
+    }
+}
+
+
+.right_section{
+   
+    .image_sec{
+        background-image: url(../../assets/Auth_image/login_vetor.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        top: -40px !important;
+        transform: scaleX(-1);
+        img{
+    
+            width:70%;
+         
+         }
+    
+    }
+}
+
+
+.forget_pass_section{
+
+    background-image: url(../../assets/Auth_image/forget_pass.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: -40px !important;
+    height: 400px;
+   
+   
+}
+.top_section{
+     position: absolute;
+     top:50%;
+     bottom:40%;
+     left: 0;
+     
+     width: 60% !important;
+    .image_sec{
+        
+        img{
+    
+            width:100%;
+         
+         }
+    
+    }
+}
+
+
+.react-datepicker-wrapper{
+
+width: 82% !important;
+
+
+}
+
+.react-datepicker__navigation{
+ margin-top: 11px !important;
+ 
+
+}
+

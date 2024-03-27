@@ -5,20 +5,46 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 
-
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Laboratory = lazy(() => import("./Pages/Laboratories/Laboratory"));
 const WhoUs = lazy(() => import("./Pages/Whous/WhoUs"));
 const Contact = lazy(() => import("./Pages/Contactus/Contact"));
 const Labdetails = lazy(() => import("./Pages/Labdetails/Labdetails"));
+const Login = lazy(() => import("./Pages/Auth/Login"));
+const Register = lazy(() => import("./Pages/Auth/Register"));
+const Forgetpass = lazy(() => import("./Pages/Auth/Forgetpass"));
 
 function App() {
-  // const [count, setCount] = useState(0);
 
   return (
     <>
       <BrowserRouter>
         <Routes>
+        <Route
+              path="login"
+              element={
+                <Suspense fallback={""}>
+                  <Login />
+                </Suspense>
+              }
+            />
+             <Route
+              path="register"
+              element={
+                <Suspense fallback={""}>
+                  <Register />
+                </Suspense>
+              }
+            />
+            <Route
+              path="forget_password"
+              element={
+                <Suspense fallback={""}>
+                  <Forgetpass />
+                </Suspense>
+              }
+            />
+        
           <Route path="/" element={<Layout />}>
             <Route
               index
