@@ -1,27 +1,38 @@
 import React from 'react'
-import { FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram ,FaFacebookF , FaSnapchatGhost ,FaTiktok  ,FaTwitter  } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import  logo from '../../assets/logofooter.png'
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
         <div className=' bg-blue-50  w-full '>
-        <div className="footer_sec flex justify-center items-center flex-col  sm:px-10 ">
-         <div className='social flex  items-center gap-6 sm:mx-10  mt-20  lg:mx-20  '>
+          <div className="container mx-auto">
+            <div className="footer_sec flex justify-center items-center flex-col  sm:px-10 ">
+         <div className='social flex  items-center flex-col-reverse lg:flex-row  gap-6 sm:mx-10  mt-20  lg:mx-20  '>
+          <div className='flex  items-center   gap-6'>
+             <Link to='' className='text-cyan-800 text-xl '>
+                <SiGmail />
+            </Link> 
+            <Link to='' className='text-cyan-800 text-xl '>
+                <FaSnapchatGhost  />
+            </Link> 
+            <Link to='' className='text-cyan-800 text-xl '>
+                <FaTiktok  />
+            </Link> 
+            
             <Link to='' className='text-cyan-800 text-xl '>
                 <FaInstagram />
             </Link>
             <Link to='' className='text-cyan-800 text-xl '>
-                <FaLinkedinIn />
-            </Link>
-            <Link to='' className='text-cyan-800 text-xl '>
-                <FaXTwitter />
+                <FaTwitter  />
             </Link>
             <Link to='' className='text-cyan-800 text-xl '>
                 <FaFacebookF />
             </Link>
-            <div className='border-r-2 border-cyan-800 px-6'>
+          </div>
+        
+            <div className='lg:border-r-2 border-cyan-800 px-6'>
              <img src={logo} alt=""  className='w-40' />
             </div>
          
@@ -40,6 +51,8 @@ const Footer = () => {
          
          </div>
        </div>
+          </div>
+        
        <div className='copyright flex justify-center items-center  bg-teal-500'>
        <span className='text-center mt-5 mb-5 text-white'>جميع الحقوق محفوظه @2024</span>
        </div>

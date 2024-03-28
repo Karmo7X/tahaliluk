@@ -5,14 +5,16 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 
+
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Laboratory = lazy(() => import("./Pages/Laboratories/Laboratory"));
-const WhoUs = lazy(() => import("./Pages/Whous/WhoUs"));
+const Offerpage = lazy(() => import("./Pages/OfferPage/Offerpage"));
 const Contact = lazy(() => import("./Pages/Contactus/Contact"));
 const Labdetails = lazy(() => import("./Pages/Labdetails/Labdetails"));
 const Login = lazy(() => import("./Pages/Auth/Login"));
 const Register = lazy(() => import("./Pages/Auth/Register"));
 const Forgetpass = lazy(() => import("./Pages/Auth/Forgetpass"));
+const Profile = lazy(() => import("./Pages/Profile/Profile"));
 
 function App() {
 
@@ -71,10 +73,10 @@ function App() {
               }
             />
             <Route
-              path="Who_US"
+              path="offers"
               element={
                 <Suspense fallback={""}>
-                  <WhoUs />
+                  <Offerpage />
                 </Suspense>
               }
             />
@@ -83,6 +85,14 @@ function App() {
               element={
                 <Suspense fallback={""}>
                   <Contact />
+                </Suspense>
+              }
+            />
+            <Route
+              path="Profile"
+              element={
+                <Suspense fallback={""}>
+                  <Profile />
                 </Suspense>
               }
             />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WhoUs = () => {
+const Offerpage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const WhoUs = () => {
   )
 }
 
-export default WhoUs
+export default Offerpage

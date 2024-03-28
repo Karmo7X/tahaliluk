@@ -364,7 +364,7 @@ const navigate =useNavigate()
                  
                   type={showpass ? "text" : "password"}
                   autoComplete="password"
-                  placeholder='كلمة المرور '
+                  placeholder='تأكيد كلمة المرور  '
                   required
                   onChange={(e)=>setpassword(e.target.value)}
                   className="block w-full border-none  outline-none p-4 text-gray-400 shadow-sm bg-transparent  placeholder:text-gray-400  sm:text-sm sm:leading-6"

@@ -118,6 +118,7 @@ const Home = () => {
               ref={SlideRef}
               onSlideChange={onSlideChange}
               autoplay={{ delay: 3000 }}
+          
             >
               <SwiperSlide >
                 <div className="flex items-center  justify-center lg:p-20">
